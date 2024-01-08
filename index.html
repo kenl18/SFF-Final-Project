@@ -1,27 +1,37 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Choose Your Own Adventure</title>
-    </head>
-    <body> 
-         <center> 
-            <h1> Pitiful </h1> <br> 
-            <h3> Welcome Adventurer </h3>
-            <p> Before you begin your journey, pick your preferred race. 
-                Each race has 3 stats: strength, intelligence, and luck. 
-                The stats will be randomly generated from a range depending on the class. 
-            </p>
-            <p> This "Choose Your Own Adventure" has RNG aspects. Some choices throughout
-                the game will have a chance of success. Some choice will scale off strength,
-                intelligence, or luck. The probability and the stat is scales off with will be
-                given. Most of the time, it will scale off of strength. (Having higher strength
-                will increase the chances of success.) Higher intelligence will increase the amount
-                of information that you will get throughout your journey. Luck increases the chance
-                of random events 
-            </p>
 
-        </center>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=80%, initial-scale=1">
+    <title>Choose Your Own Adventure</title>
+    <link ref="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h1> Pitiful </h1> <br>
+    <h3> Welcome Adventurer </h3>
+    <p> Before you begin your journey, pick your preferred class.
+        Each class has 3 stats: strength, intelligence, and luck.
+        The stats will be randomly generated from a range depending on the class.
+    </p>
+    <p> This "Choose Your Own Adventure" has RNG aspects. Some choices throughout
+        the game will have a chance of success. Some choice will scale off strength,
+        intelligence, or luck. The probability and the stat is scales off with will be
+        given. Most of the time, it will scale off of strength. (Having higher strength
+        will increase the chances of success.) Higher intelligence will increase the amount
+        of information that you will get throughout your journey. Luck increases the chance
+        of random events
+    </p>
+    <br> <br> <br> <br>
+
+    <h2> <u> Classes </u> </h2>
+    <div>
+        <button type="button" id="btn1" class="inactiveBtn" onclick="btnFunc1()"> Brute </button>
+        <button type="button" id="btn2" class="inactiveBtn" onclick="btnFunc2()"> Nerd </button>
+        <button type="button" id="btn3" class="inactiveBtn" onclick="btnFunc3()"> Geraldo </button>
+        <button type="button" id="btn4" class="inactiveBtn" onclick="btnFunc4()"> Jack </button>
+    </div>
+    <script src="js/index.js"></script>
+</body>
 </html>
