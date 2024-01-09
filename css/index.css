@@ -7,6 +7,10 @@ body {
     font-family: 'EB Garamond', italic;
 }
 
+li {
+    margin: 0%;
+}
+
 .activeBtn {
     background-color: #066ef7;
     border: none;
@@ -17,12 +21,12 @@ body {
     font-family: 'EB Garamond', italic;
     transition-duration: 0.2s;
     cursor: pointer;
-    height: 40px;
+    height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     border-radius: 6px;
-    width: 160px;
+    width: 120px;
 }
 
 
@@ -50,10 +54,10 @@ body {
     font-family: 'EB Garamond', italic;
     transition-duration: 0.2s;
     cursor: pointer;
-    height: 40px;
+    height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
     border-radius: 6px;
-    width: 160px;
+    width: 120px;
 }
