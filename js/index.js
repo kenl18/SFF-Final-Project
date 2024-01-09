@@ -41,3 +41,9 @@ function btnFunc4() {
     document.getElementById("btn1").classList.add("deactivatedBtn");
     document.getElementById("btn1").classList.remove("activeBtn");
 }
+
+function activeButton() {
+    var button = document.querySelector('.activeBtn');
+    var text = document.querySelector('.chosenClass');
+    text.innerHTML = "Chosen Class: " + button.value;
+}
