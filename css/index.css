@@ -2,11 +2,12 @@
 
 body {
     text-align: center;
+    color: white;
     padding-left: 25%;
     padding-right: 25%;
     font-family: 'EB Garamond', italic;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 25% 100%;
+	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
 }
@@ -21,14 +22,6 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-.white {
-    background-color: white;
-    height: 100%;
-    margin-left: 25%;
-    margin-right: 25%;
-    box-sizing: border-box;
 }
 
 ul {
@@ -58,7 +51,7 @@ ul {
 
 .deactivatedBtn {
     background-color: white!important;
-    color: black!important;
+    color: white!important;
     border: 2px solid #0cdcef!important;
 }
 
