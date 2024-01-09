@@ -6,7 +6,7 @@ body {
     padding-right: 25%;
     font-family: 'EB Garamond', italic;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
+	background-size: 25% 100%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
 }
@@ -25,8 +25,10 @@ body {
 
 .white {
     background-color: white;
-    margin-left: 50%;
-    margin-right: 50%;
+    height: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-sizing: border-box;
 }
 
 ul {
