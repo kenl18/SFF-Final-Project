@@ -46,8 +46,9 @@ function btnFunc4() {
     activeButton();
 }
 
-function activeButton() {
+async function activeButton() {
     var button = document.querySelector('.activeBtn');
     var text = document.querySelector('.chosenClass');
+    console.log(button.value);
     text.innerHTML = "Chosen Class: " + button.value;
 }
