@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bodoni&display=swap');
 
 body {
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
-    font-family: 'IM Fell English', serif;
+    font-family: 'Bodoni', elegant;
 }
 
 .activeBtn {
@@ -41,7 +41,7 @@ body {
 
 
 .inactiveBtn {
-    background-color: #4CAF50;
+    background-color: #066ef7;
     border: none;
     color: white;
     text-align: center;
