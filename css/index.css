@@ -13,16 +13,8 @@ body {
 #left {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     animation: gradient 15s ease infinite;
-    height: 100vh;
-    width: 25vh;
-}
-
-#right {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    animation: gradient 15s ease infinite;
-    height: 100vh;
-    width: 25vh;
-    left: 50vh;
+    height: 100%;
+    width: 25%;
 }
 
 @keyframes gradient {
