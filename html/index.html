@@ -10,52 +10,55 @@
 </head>
 
 <body>
-    <h1> Pitiful </h1> <br>
-    <h3> Welcome Adventurer! </h3>
-    <p> Before you start your journey, pick your preferred class.
-        Each class has 3 stats: strength, intelligence, and luck.
-    </p>
-    <ul>
-        <li> Strength: Increases the chance of success in battles. </li>
-        <li> Intelligence: Increases perception and information </li>
-        <li> Luck: Increases the chance of encounters </li>
-    </ul>
-    <p> Each stat will be randomly generated depending on the class chosen. 
-        Minimum stat is 0, while the maximum is 20. 
-    </p>
+    <div class="content">
+        <h1> Pitiful </h1> <br>
+        <h3> Welcome Adventurer! </h3>
+        <p> Before you start your journey, pick your preferred class.
+            Each class has 3 stats: strength, intelligence, and luck.
+        </p>
+        <ul>
+            <li> Strength: Increases the chance of success in battles. </li>
+            <li> Intelligence: Increases perception and information </li>
+            <li> Luck: Increases the chance of encounters </li>
+        </ul>
+        <p> Each stat will be randomly generated depending on the class chosen.
+            Minimum stat is 0, while the maximum is 20.
+        </p>
 
-    <h2> <u> Classes </u> </h2>
-    <div>
-        <button type="button" id="btn1" value="Hisagi" class="inactiveBtn deactivatedBtn" onclick="btnFunc1()"> 
-            <u> Hasagi </u> <br> 
-            Strength: 15 - 20 <br> 
-            Intelligence: 3 - 8 <br>
-            Luck: 3 - 8
-        </button> 
-        <button type="button" id="btn2" value="Aldous" class="inactiveBtn deactivatedBtn" onclick="btnFunc2()"> 
-            <u> Aldous </u> <br>
-            Strength: 3 - 8 <br>
-            Intelligence: 15 - 20 <br>
-            Luck: 3 - 8
+        <h2> <u> Classes </u> </h2>
+        <div>
+            <button type="button" id="btn1" value="Hisagi" class="inactiveBtn deactivatedBtn" onclick="btnFunc1()">
+                <u> Hasagi </u> <br>
+                Strength: 15 - 20 <br>
+                Intelligence: 3 - 8 <br>
+                Luck: 3 - 8
+            </button>
+            <button type="button" id="btn2" value="Aldous" class="inactiveBtn deactivatedBtn" onclick="btnFunc2()">
+                <u> Aldous </u> <br>
+                Strength: 3 - 8 <br>
+                Intelligence: 15 - 20 <br>
+                Luck: 3 - 8
+            </button>
+            <button type="button" id="btn3" value="Geraldo" class="inactiveBtn deactivatedBtn" onclick="btnFunc3()">
+                <u> Geraldo </u> <br>
+                Strength: 3 - 8 <br>
+                Intelligence: 3 - 8 <br>
+                Luck: 15 - 20
+            </button>
+            <button type="button" id="btn4" value="Jack" class="inactiveBtn deactivatedBtn" onclick="btnFunc4()">
+                <u> Jack </u> <br>
+                Strength: 7 - 12 <br>
+                Intelligence: 7 - 12 <br>
+                Luck: 7 - 12
+            </button> <br>
+        </div>
+        <footer> - There is an equal chance for each stat - </footer>
+        <h3 class="chosenClass"> Chosen Class: </h3>
+        <button type="button" class="confirmBtn deactivatedBtn"
+            onclick="location.href='https://kenl18.github.io/SFF-Final-Project/html/profile.html'">
+            Confirm
         </button>
-        <button type="button" id="btn3" value="Geraldo" class="inactiveBtn deactivatedBtn" onclick="btnFunc3()"> 
-            <u> Geraldo </u> <br> 
-            Strength: 3 - 8 <br>
-            Intelligence: 3 - 8 <br>
-            Luck: 15 - 20 
-        </button> 
-        <button type="button" id="btn4" value="Jack" class="inactiveBtn deactivatedBtn" onclick="btnFunc4()"> 
-            <u> Jack </u> <br> 
-            Strength: 7 - 12 <br>
-            Intelligence: 7 - 12 <br>
-            Luck: 7 - 12 
-        </button> <br>
     </div>
-    <footer> - There is an equal chance for each stat - </footer>
-    <h3 class="chosenClass"> Chosen Class: </h3>
-    <button type="button" class="confirmBtn deactivatedBtn" onclick="location.href='https://kenl18.github.io/SFF-Final-Project/html/profile.html'"> 
-        Confirm 
-    </button>
 </body>
 
 </html>
