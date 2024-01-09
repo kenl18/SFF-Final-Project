@@ -2,6 +2,7 @@
 
 body {
     text-align: center;
+    font-size: 16px;
     color: white;
     padding-left: 25%;
     padding-right: 25%;
@@ -50,7 +51,7 @@ ul {
 
 
 .deactivatedBtn {
-    background-color: white!important;
+    background-color: rgb(0, 250, 183)!important;
     color: white!important;
     border: 2px solid #0cdcef!important;
 }
