@@ -23,6 +23,15 @@ body {
 	}
 }
 
+.white {
+    background-color: white;
+    height: 100vh;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 ul {
     list-style-position: inside;
     padding-left: 0;
