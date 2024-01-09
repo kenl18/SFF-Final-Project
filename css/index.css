@@ -7,8 +7,8 @@ body {
     font-family: 'EB Garamond', italic;
 }
 
-li {
-    margin: 0%;
+ul {
+    padding-left: 20px;
 }
 
 .activeBtn {
