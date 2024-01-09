@@ -4,7 +4,11 @@ body {
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
-    font-family: 'EB Garamond', elegant;
+    font-family: 'EB Garamond', italic;
+}
+
+button {
+    font-family: 'EB Garamond', italic;
 }
 
 .activeBtn {
