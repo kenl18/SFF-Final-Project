@@ -28,6 +28,7 @@ ul {
     margin-left: 10px;
     border-radius: 6px;
     width: 120px;
+    z-index: 1;
 }
 
 
