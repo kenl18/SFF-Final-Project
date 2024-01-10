@@ -53,27 +53,30 @@ async function activeButton() {
     text.innerHTML = "Chosen Class: " + button.value;
 }
 
+let str, int, luck;
+
 function statGeneration() {
     var button = document.querySelector('.activeBtn');
     if (button.value == "Hasagi") {
-        var str = Math.floor(Math.random() * 5 + 15)
-        var int = Math.floor(Math.random() * 5 + 3)
-        var luck = Math.floor(Math.random() * 5 + 3)
+        str = Math.floor(Math.random() * 5 + 15)
+        int = Math.floor(Math.random() * 5 + 3)
+        luck = Math.floor(Math.random() * 5 + 3)
     }
     if (button.value == "Aldous") {
-        var int = Math.floor(Math.random() * 5 + 15)
-        var str = Math.floor(Math.random() * 5 + 3)
-        var luck = Math.floor(Math.random() * 5 + 3)
+        int = Math.floor(Math.random() * 5 + 15)
+        str = Math.floor(Math.random() * 5 + 3)
+        luck = Math.floor(Math.random() * 5 + 3)
     }
     if (button.value == "Geraldo") {
-        var luck = Math.floor(Math.random() * 5 + 15)
-        var str = Math.floor(Math.random() * 5 + 3)
-        var int = Math.floor(Math.random() * 5 + 3)
+        luck = Math.floor(Math.random() * 5 + 15)
+        str = Math.floor(Math.random() * 5 + 3)
+        int = Math.floor(Math.random() * 5 + 3)
     }
     if (button.value == "Jack") {
-        var int = Math.floor(Math.random() * 5 + 7)
-        var str = Math.floor(Math.random() * 5 + 7)
-        var luck = Math.floor(Math.random() * 5 + 7)
+        int = Math.floor(Math.random() * 5 + 7)
+        str = Math.floor(Math.random() * 5 + 7)
+        luck = Math.floor(Math.random() * 5 + 7)
     }
-    module.exports = {str, int, luck};
 }
+
+export {str, int, luck}
