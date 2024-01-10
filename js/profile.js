@@ -1,4 +1,6 @@
-import {str, int, luck} from './index.js';
+const str = getCookieValue('str');
+const int = getCookieValue('int');
+const luck = getCookieValue('luck');
 
 console.log(str);
 var strText = document.querySelector(".str")

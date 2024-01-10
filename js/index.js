@@ -29,9 +29,12 @@ document.getElementById("statBtn").addEventListener("click", function () {
         str = Math.floor(Math.random() * 5 + 7)
         luck = Math.floor(Math.random() * 5 + 7)
     }
+
+    document.cookie = `str=${str}; path=/`;
+    document.cookie = `int=${int}; path=/`;
+    document.cookie = `luck=${luck}; path=/`;
 });
 
-export {str, int, luck};
 
 document.getElementById("btn1").addEventListener("click", function () {
     document.getElementById("btn1").classList.add("activeBtn");
