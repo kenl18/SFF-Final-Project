@@ -1,4 +1,4 @@
-document.getElementById(".btn1").addEventListener("click", function () {
+document.getElementById("btn1").addEventListener("click", function () {
     document.getElementById("btn1").classList.add("activeBtn");
     document.getElementById("btn1").classList.remove("deactivatedBtn");
     document.getElementById("btn2").classList.add("deactivatedBtn");
