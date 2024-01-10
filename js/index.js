@@ -1,4 +1,4 @@
-function btnFunc1() {
+document.querySelector(".btn1").addEventListener("click", function () {
     document.getElementById("btn1").classList.add("activeBtn");
     document.getElementById("btn1").classList.remove("deactivatedBtn");
     document.getElementById("btn2").classList.add("deactivatedBtn");
@@ -8,7 +8,7 @@ function btnFunc1() {
     document.getElementById("btn4").classList.add("deactivatedBtn");
     document.getElementById("btn4").classList.remove("activeBtn");
     activeButton();
-}
+});
 
 function btnFunc2() {
     document.getElementById("btn2").classList.add("activeBtn");
