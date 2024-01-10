@@ -30,6 +30,7 @@ document.getElementById("statBtn").addEventListener("click", function () {
         luck = Math.floor(Math.random() * 5 + 7)
     }
 
+    console.log(str);
     document.cookie = `str=${str}; path=/`;
     document.cookie = `int=${int}; path=/`;
     document.cookie = `luck=${luck}; path=/`;
