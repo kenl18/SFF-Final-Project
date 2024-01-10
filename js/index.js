@@ -52,3 +52,30 @@ async function activeButton() {
     console.log(button.value);
     text.innerHTML = "Chosen Class: " + button.value;
 }
+
+function statGeneration() {
+    var button = document.querySelector('.activeBtn');
+    if (button.value == "Hasagi") {
+        var str = Math.floor(Math.random() * 5 + 15)
+        var int = Math.floor(Math.random() * 5 + 3)
+        var luck = Math.floor(Math.random() * 5 + 3)
+    }
+    if (button.value == "Aldous") {
+        var int = Math.floor(Math.random() * 5 + 15)
+        var str = Math.floor(Math.random() * 5 + 3)
+        var luck = Math.floor(Math.random() * 5 + 3)
+    }
+    if (button.value == "Geraldo") {
+        var luck = Math.floor(Math.random() * 5 + 15)
+        var str = Math.floor(Math.random() * 5 + 3)
+        var int = Math.floor(Math.random() * 5 + 3)
+    }
+    if (button.value == "Jack") {
+        var int = Math.floor(Math.random() * 5 + 7)
+        var str = Math.floor(Math.random() * 5 + 7)
+        var luck = Math.floor(Math.random() * 5 + 7)
+    }
+    console.log(str);
+    console.log(int);
+    console.log(luck)
+}
