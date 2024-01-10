@@ -1,4 +1,5 @@
 import {str, int, luck} from './index.js';
+
 console.log(str);
 var strText = document.querySelector(".str")
 strText.innerHTML = "Strength: " + str;
