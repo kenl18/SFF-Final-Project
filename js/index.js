@@ -46,17 +46,12 @@ document.getElementById("btn4").addEventListener("click", function () {
     activeButton();
 });
 
+var str, int, luck;
+
 async function activeButton() {
     var button = document.querySelector('.activeBtn');
     var text = document.querySelector('.chosenClass');
-    console.log(button.value);
     text.innerHTML = "Chosen Class: " + button.value;
-}
-
-var str, int, luck;
-
-document.getElementById("statBtn").addEventListener("click", function () {
-    var button = document.querySelector('.activeBtn');
     if (button.value == "Hasagi") {
         str = Math.floor(Math.random() * 5 + 15)
         int = Math.floor(Math.random() * 5 + 3)
@@ -77,7 +72,9 @@ document.getElementById("statBtn").addEventListener("click", function () {
         str = Math.floor(Math.random() * 5 + 7)
         luck = Math.floor(Math.random() * 5 + 7)
     }
+}
 
+document.getElementById("statBtn").addEventListener("click", function () {
     document.cookie = `str=${str}; path=/`;
     document.cookie = `int=${int}; path=/`;
     document.cookie = `luck=${luck}; path=/`;
