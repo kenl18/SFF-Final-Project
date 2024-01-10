@@ -79,4 +79,4 @@ document.getElementById("statBtn").addEventListener("click", function () {
     }
 });
 
-export {str, int, luck}
+export {str, int, luck};
