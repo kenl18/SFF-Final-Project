@@ -75,7 +75,5 @@ function statGeneration() {
         var str = Math.floor(Math.random() * 5 + 7)
         var luck = Math.floor(Math.random() * 5 + 7)
     }
-    console.log(str);
-    console.log(int);
-    console.log(luck)
+    module.exports = {str, int, luck};
 }
