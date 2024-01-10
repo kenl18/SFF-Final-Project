@@ -1,4 +1,5 @@
 const {str, int, luck} = require('.index.js');
+console.log(str);
 var strText = document.querySelector(".str")
 strText.innerHTML = "Strength: " + str;
 var intText = document.querySelector(".int")
