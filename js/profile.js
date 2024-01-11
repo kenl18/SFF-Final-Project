@@ -42,8 +42,12 @@ function money() {
     }
 }
 
-function closePopup() {
-    document.getElementById("popupInfo").style.display = "none";
+async function closePopup() {
+    var close = document.querySelector('.close');
+
+    if (close) {
+        document.getElementById("popupInfo").style.display = "none";
+    }
 }
 
 document.getElementById("monahInfo").addEventListener("click", function() {
@@ -52,3 +56,4 @@ document.getElementById("monahInfo").addEventListener("click", function() {
 
 money();
 stats();
+closePopup();
