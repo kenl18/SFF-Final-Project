@@ -42,3 +42,11 @@ function money() {
 }
 
 money();
+
+document.getElementById("monahInfo").addEventListener("click", function() {
+    document.getElementById("popupInfo").style.display = "block";
+});
+
+function closePopup() {
+    document.getElementById("popupInfo").style.display = "none";
+}
