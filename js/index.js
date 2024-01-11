@@ -67,7 +67,15 @@ async function activeButton() {
 }
 
 document.getElementById("statBtn").addEventListener("click", function () {
-    document.cookie = `str=${str}; path=/`;
-    document.cookie = `int=${int}; path=/`;
-    document.cookie = `luck=${luck}; path=/`;
+    var activeBtn = document.querySelector('.activeBtn');
+
+    if (activeBtn) {
+        document.cookie = `str=${str}; path=/`;
+        document.cookie = `int=${int}; path=/`;
+        document.cookie = `luck=${luck}; path=/`;
+
+        window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/profile.html';
+    } else {
+        alert("Please choose a class");
+    }
 });
