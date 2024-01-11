@@ -1,3 +1,5 @@
+var str, int, luck;
+
 document.getElementById("btn1").addEventListener("click", function () {
     document.getElementById("btn1").classList.add("activeBtn");
     document.getElementById("btn1").classList.remove("deactivatedBtn");
@@ -8,6 +10,9 @@ document.getElementById("btn1").addEventListener("click", function () {
     document.getElementById("btn4").classList.add("deactivatedBtn");
     document.getElementById("btn4").classList.remove("activeBtn");
     activeButton();
+    str = Math.floor(Math.random() * 5 + 15)
+    int = Math.floor(Math.random() * 5 + 3)
+    luck = Math.floor(Math.random() * 5 + 3)
 });
 
 document.getElementById("btn2").addEventListener("click", function () {
@@ -20,6 +25,9 @@ document.getElementById("btn2").addEventListener("click", function () {
     document.getElementById("btn4").classList.add("deactivatedBtn");
     document.getElementById("btn4").classList.remove("activeBtn");
     activeButton();
+    int = Math.floor(Math.random() * 5 + 15)
+    str = Math.floor(Math.random() * 5 + 3)
+    luck = Math.floor(Math.random() * 5 + 3)
 });
 
 document.getElementById("btn3").addEventListener("click", function () {
@@ -32,6 +40,9 @@ document.getElementById("btn3").addEventListener("click", function () {
     document.getElementById("btn4").classList.add("deactivatedBtn");
     document.getElementById("btn4").classList.remove("activeBtn");
     activeButton();
+    luck = Math.floor(Math.random() * 5 + 15)
+    str = Math.floor(Math.random() * 5 + 3)
+    int = Math.floor(Math.random() * 5 + 3)
 });
 
 document.getElementById("btn4").addEventListener("click", function () {
@@ -44,34 +55,15 @@ document.getElementById("btn4").addEventListener("click", function () {
     document.getElementById("btn1").classList.add("deactivatedBtn");
     document.getElementById("btn1").classList.remove("activeBtn");
     activeButton();
+    int = Math.floor(Math.random() * 5 + 7)
+    str = Math.floor(Math.random() * 5 + 7)
+    luck = Math.floor(Math.random() * 5 + 7)
 });
-
-var str, int, luck;
 
 async function activeButton() {
     var button = document.querySelector('.activeBtn');
     var text = document.querySelector('.chosenClass');
     text.innerHTML = "Chosen Class: " + button.value;
-    if (button.value == "Hasagi") {
-        str = Math.floor(Math.random() * 5 + 15)
-        int = Math.floor(Math.random() * 5 + 3)
-        luck = Math.floor(Math.random() * 5 + 3)
-    }
-    if (button.value == "Aldous") {
-        int = Math.floor(Math.random() * 5 + 15)
-        str = Math.floor(Math.random() * 5 + 3)
-        luck = Math.floor(Math.random() * 5 + 3)
-    }
-    if (button.value == "Geraldo") {
-        luck = Math.floor(Math.random() * 5 + 15)
-        str = Math.floor(Math.random() * 5 + 3)
-        int = Math.floor(Math.random() * 5 + 3)
-    }
-    if (button.value == "Jack") {
-        int = Math.floor(Math.random() * 5 + 7)
-        str = Math.floor(Math.random() * 5 + 7)
-        luck = Math.floor(Math.random() * 5 + 7)
-    }
 }
 
 document.getElementById("statBtn").addEventListener("click", function () {
