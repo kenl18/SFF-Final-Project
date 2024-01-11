@@ -21,3 +21,24 @@ var intText = document.querySelector(".int")
 intText.innerHTML = "Intelligence: " + int;
 var luckText = document.querySelector(".luck")
 luckText.innerHTML = "Luck: " + luck;
+
+function money() {
+    const randomNum = Math.floor(Math.random() * 100) + 1;
+    var moneyText = document.querySelector(".monah")
+
+    if (randomNum <= 5) {
+        moneyText.innerHTML = "Super Rich: 20000";
+    } else if (randomNum <= 15) {
+        moneyText.innerHTML = "Rich: 10000";
+    } else if (randomNum <= 30) {
+        moneyText.innerHTML = "Middle Class: 5000";
+    } else if (randomNum <= 50) {
+        moneyText.innerHTML = "Average: 2500";
+    } else if (randomNum <= 80) {
+        moneyText.innerHTML = "No Money: 0";
+    } else {
+        moneyText.innerHTML = "Debt-Ridden: -2500";
+    }
+}
+
+money();
