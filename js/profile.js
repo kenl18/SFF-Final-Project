@@ -103,3 +103,6 @@ function trait() {
 money();
 stats();
 trait();
+
+window.onbeforeunload = function() {
+}
