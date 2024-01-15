@@ -9,10 +9,12 @@ function getCookieValue(name) {
     return null;
 }
 
-const str = getCookieValue('str');
-const int = getCookieValue('int');
-const luck = getCookieValue('luck');
-console.log(str, int, luck)
+const str = parseInt(getCookieValue('str'));
+const int = parseInt(getCookieValue('int'));
+const luck = parseInt(getCookieValue('luck'));
+console.log(str);
+console.log(int);
+console.log(luck);
 
 function stats() {
     var strText = document.querySelector(".str")
