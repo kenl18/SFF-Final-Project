@@ -66,37 +66,37 @@ function trait() {
         str += 1;
         document.cookie = `str=${str}; path=/`;
         var strText = document.querySelector(".str");
-        strText.innerHTML = `${str - 1} + 1 = ${str}`;
+        strText.innerHTML = `Strength: ${str - 1} + 1 = ${str}`;
     } else if (randomNum <= 70) {
         traitText.innerHTML = "Trait: +1 Intelligence";
         int += 1;
         document.cookie = `int=${int}; path=/`;
-        var intText = document.querySelector(".inttrait");
-        intText.innerHTML = ` + 1 = ${int}`;
+        var intText = document.querySelector(".int");
+        intText.innerHTML = `Intelligence: ${int - 1} + 1 = ${int}`;
     } else if (randomNum <= 85) {
         traitText.innerHTML = "Trait: +1 Luck";
         luck += 1;
         document.cookie = `luck=${luck}; path=/`;
-        var luckText = document.querySelector(".lucktrait");
-        luckText.innerHTML = ` + 1 = ${luck}`;
+        var luckText = document.querySelector(".luck");
+        luckText.innerHTML = `Luck: ${luck - 1} + 1 = ${luck}`;
     } else if (randomNum <= 90) {
         traitText.innerHTML = "Trait: +2 Strength";
         str += 2;
         document.cookie = `str=${str}; path=/`;
-        var strText = document.querySelector(".strtrait");
-        strText.innerHTML = ` + 2 = ${str}`;
+        var strText = document.querySelector(".str");
+        strText.innerHTML = `Strength: ${str - 2} + 2 = ${str}`;
     } else if (randomNum <= 95) {
         traitText.innerHTML = "Trait: +2 Intelligence";
         int += 2;
         document.cookie = `int=${int}; path=/`;
-        var intText = document.querySelector(".inttrait");
-        intText.innerHTML = ` + 2 = ${int}`;
+        var intText = document.querySelector(".int");
+        intText.innerHTML = `Intelligence: ${int - 2} + 2 = ${int}`;
     } else {
         traitText.innerHTML = "Trait: +2 Luck";
         luck += 1;
         document.cookie = `luck=${luck}; path=/`;
-        var luckText = document.querySelector(".lucktrait");
-        luckText.innerHTML = ` + 2 = ${luck}`;
+        var luckText = document.querySelector(".luck");
+        luckText.innerHTML = `Luck: ${luck - 2} + 2 = ${luck}`;
     }
 }
 
