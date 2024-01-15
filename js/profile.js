@@ -50,5 +50,26 @@ document.getElementById("monahInfo").addEventListener("click", function() {
     document.getElementById("popupInfo").style.display = "block";
 });
 
+function trait() {
+    const randomNum = Math.floor(Math.random() * 100) + 1;
+    var traitText = document.querySelector(".trait")
+    if (randomNum <= 40) {
+        traitText.innerHTML = "Trait: None";
+    } else if (randomNum <= 55) {
+        traitText.innerHTML = "Trait: +1 Strength";
+    } else if (randomNum <= 70) {
+        traitText.innerHTML = "Trait: +1 Intelligence";
+    } else if (randomNum <= 85) {
+        traitText.innerHTML = "Trait: +1 Luck";
+    } else if (randomNum <= 90) {
+        traitText.innerHTML = "Trait: +2 Strength";
+    } else if (randomNum <= 95) {
+        traitText.innerHTML = "Trait: +2 Intelligence";
+    } else {
+        traitText.innerHTML = "Trait: +2 Luck";
+    }
+}
+
 money();
 stats();
+trait();
