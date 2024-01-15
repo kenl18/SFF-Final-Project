@@ -9,9 +9,9 @@ function getCookieValue(name) {
     return null;
 }
 
-const str = parseInt(getCookieValue('str'));
-const int = parseInt(getCookieValue('int'));
-const luck = parseInt(getCookieValue('luck'));
+var str = parseInt(getCookieValue('str'));
+var int = parseInt(getCookieValue('int'));
+var luck = parseInt(getCookieValue('luck'));
 console.log(str);
 console.log(int);
 console.log(luck);
