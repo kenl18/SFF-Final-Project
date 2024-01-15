@@ -103,7 +103,3 @@ function trait() {
 money();
 stats();
 trait();
-
-window.onbeforeunload = function() {
-    return "Refresh";
-}
