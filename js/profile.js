@@ -12,9 +12,7 @@ function getCookieValue(name) {
 var str = parseInt(getCookieValue('str'));
 var int = parseInt(getCookieValue('int'));
 var luck = parseInt(getCookieValue('luck'));
-console.log(str);
-console.log(int);
-console.log(luck);
+
 
 function stats() {
     var strText = document.querySelector(".str")
@@ -67,26 +65,38 @@ function trait() {
         traitText.innerHTML = "Trait: +1 Strength";
         str += 1;
         document.cookie = `str=${str}; path=/`;
+        var strText = document.querySelector(".strtrait");
+        strText.innerHTML = ` + 1 = ${str}`;
     } else if (randomNum <= 70) {
         traitText.innerHTML = "Trait: +1 Intelligence";
         int += 1;
         document.cookie = `int=${int}; path=/`;
+        var intText = document.querySelector(".inttrait");
+        intText.innerHTML = ` + 1 = ${int}`;
     } else if (randomNum <= 85) {
         traitText.innerHTML = "Trait: +1 Luck";
         luck += 1;
         document.cookie = `luck=${luck}; path=/`;
+        var luckText = document.querySelector(".lucktrait");
+        luckText.innerHTML = ` + 1 = ${luck}`;
     } else if (randomNum <= 90) {
         traitText.innerHTML = "Trait: +2 Strength";
         str += 2;
         document.cookie = `str=${str}; path=/`;
+        var strText = document.querySelector(".strtrait");
+        strText.innerHTML = ` + 2 = ${str}`;
     } else if (randomNum <= 95) {
         traitText.innerHTML = "Trait: +2 Intelligence";
         int += 2;
         document.cookie = `int=${int}; path=/`;
+        var intText = document.querySelector(".inttrait");
+        intText.innerHTML = ` + 2 = ${int}`;
     } else {
         traitText.innerHTML = "Trait: +2 Luck";
         luck += 1;
         document.cookie = `luck=${luck}; path=/`;
+        var luckText = document.querySelector(".lucktrait");
+        luckText.innerHTML = ` + 2 = ${luck}`;
     }
 }
 
