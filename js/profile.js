@@ -12,7 +12,7 @@ function getCookieValue(name) {
 const str = getCookieValue('str');
 const int = getCookieValue('int');
 const luck = getCookieValue('luck');
-
+console.log(str, int, luck)
 
 function stats() {
     var strText = document.querySelector(".str")
