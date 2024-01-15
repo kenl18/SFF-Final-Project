@@ -105,4 +105,5 @@ stats();
 trait();
 
 window.onbeforeunload = function() {
+    return "Refresh";
 }
