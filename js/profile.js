@@ -65,8 +65,8 @@ function trait() {
         traitText.innerHTML = "Trait: +1 Strength";
         str += 1;
         document.cookie = `str=${str}; path=/`;
-        var strText = document.querySelector(".strtrait");
-        strText.innerHTML = ` + 1 = ${str}`;
+        var strText = document.querySelector(".str");
+        strText.innerHTML = `${str - 1} + 1 = ${str}`;
     } else if (randomNum <= 70) {
         traitText.innerHTML = "Trait: +1 Intelligence";
         int += 1;
