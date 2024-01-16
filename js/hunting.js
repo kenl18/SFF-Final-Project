@@ -25,3 +25,5 @@ function chance() {
     var footer = document.querySelector(".footer");
     footer.innerHTML = `Scales off luck: ${0.25 * luck}% of success`
 }
+
+chance();
