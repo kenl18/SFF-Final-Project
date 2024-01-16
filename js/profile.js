@@ -23,15 +23,6 @@ function stats() {
     luckText.innerHTML = "Luck: " + luck;
 }
 
-
-function closePopup() {
-    document.getElementById("popupInfo").style.display = "none";
-}
-
-document.getElementById("monahInfo").addEventListener("click", function() {
-    document.getElementById("popupInfo").style.display = "block";
-});
-
 function trait() {
     const randomNum = Math.floor(Math.random() * 100) + 1;
     var traitText = document.querySelector(".trait")
