@@ -33,9 +33,9 @@ document.getElementById("talkBtn").addEventListener("click", function () {
 });
 
 function chance() {
-    var footer1 = document.querySelector(".1");
+    var footer1 = document.querySelector(".footer1");
     footer1.innerHTML = `Fight scales off luck: ${1.25 * luck}% of success`
-    var footer2 = document.querySelector(".2");
+    var footer2 = document.querySelector(".footer2");
     footer2.innerHTML = `Talk scales off intelligence: ${1.25 * int}% of success`
 }
 
