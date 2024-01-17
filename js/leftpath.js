@@ -11,9 +11,9 @@ function getCookieValue(name) {
 
 document.getElementById("fightBtn").addEventListener("click", function () {
     const randomNum = Math.floor(Math.random() * 100) + 1;
-    var str = parseInt(getCookieValue('str'));
+    var luck = parseInt(getCookieValue('luck'));
 
-    if (randomNum <= 1.25 * str) {
+    if (randomNum <= 1.25 * luck) {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/elffightW.html';
     } else {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/elffightL.html';
