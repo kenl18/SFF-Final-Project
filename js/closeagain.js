@@ -18,5 +18,3 @@ function ring() {
     document.cookie = `int=${int}; path=/`;
     document.cookie = `luck=${luck}; path=/`;
 }
-
-ring();
