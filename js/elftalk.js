@@ -9,7 +9,7 @@ function getCookieValue(name) {
     return null;
 }
 
-var int = parseInt(getCookieValue('str'));
+var int = parseInt(getCookieValue('int'));
 var luck = parseInt(getCookieValue('luck'));
 
 function ring() {
