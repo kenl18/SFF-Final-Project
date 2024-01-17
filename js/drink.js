@@ -44,3 +44,12 @@ function drink() {
 }
 
 drink();
+
+function para() {
+    var effect = document.querySelector(".effect")
+    effect.innerHTML = `The bartender said you gain ${strInc} strength, ${intInc} intelligence, and ${luckInc} luck.`
+
+    document.cookie = `str=${str + strInc}; path=/`;
+    document.cookie = `int=${int + intInc}; path=/`;
+    document.cookie = `luck=${luck + luckInc}; path=/`;
+}
