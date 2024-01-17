@@ -16,9 +16,16 @@ document.getElementById("statBtn").addEventListener("click", function () {
     var luck = parseInt(getCookieValue('luck'));
 
 
-    if (randomNum <= 1.25 * (luck + int + (2 * str))) {
+    if (randomNum <= 0.125 * (luck + int + (2 * str))) {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/dragonfightW.html';
     } else {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/dragonfightL.html';
     }
 });
+
+function chance() {
+    var footer1 = document.querySelector(".footer1");
+    footer1.innerHTML = `Fight scales off luck, intelligence, and double strength: ${0.125 * (luck + int + (2 * str))}% of success`
+}
+
+chance();
