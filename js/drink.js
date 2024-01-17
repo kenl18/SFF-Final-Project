@@ -53,3 +53,5 @@ function para() {
     document.cookie = `int=${int + intInc}; path=/`;
     document.cookie = `luck=${luck + luckInc}; path=/`;
 }
+
+para();
