@@ -14,7 +14,7 @@ var luck = parseInt(getCookieValue('luck'));
 document.getElementById("statBtn").addEventListener("click", function () {
     const randomNum = Math.floor(Math.random() * 100) + 1;
 
-    if (randomNum <= 0.25 * luck) {
+    if (randomNum <= 2.5 * luck) {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/fishW.html';
     } else {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/fishL.html';
@@ -23,7 +23,7 @@ document.getElementById("statBtn").addEventListener("click", function () {
 
 function chance() {
     var footer = document.querySelector(".footer");
-    footer.innerHTML = `Scales off luck: ${0.25 * luck}% of success`
+    footer.innerHTML = `Scales off luck: ${2.5 * luck}% of success`
 }
 
 chance();
