@@ -23,7 +23,7 @@ document.getElementById("statBtn").addEventListener("click", function () {
 
 function chance() {
     var footer = document.querySelector(".footer");
-    footer.innerHTML = `Fight scales off Strength: ${2.5 * str}% of success`
+    footer.innerHTML = `Scales off Strength: ${2.5 * str}% of success`
 }
 
 chance();
