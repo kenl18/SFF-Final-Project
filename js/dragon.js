@@ -16,9 +16,9 @@ document.getElementById("statBtn").addEventListener("click", function () {
     var luck = parseInt(getCookieValue('luck'));
 
 
-    if (randomNum <= 2.5 * int) {
-        window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/stealW.html';
+    if (randomNum <= 1.25 * (luck + int + (2 * str))) {
+        window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/dragonfightW.html';
     } else {
-        window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/stealL.html';
+        window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/dragonfightL.html';
     }
 });
