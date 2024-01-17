@@ -9,9 +9,11 @@ function getCookieValue(name) {
     return null;
 }
 
+var luck = parseInt(getCookieValue('luck'));
+var int = parseInt(getCookieValue('int'));
+
 document.getElementById("fightBtn").addEventListener("click", function () {
     const randomNum = Math.floor(Math.random() * 100) + 1;
-    var luck = parseInt(getCookieValue('luck'));
 
     if (randomNum <= 1.25 * luck) {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/elffightW.html';
@@ -22,7 +24,6 @@ document.getElementById("fightBtn").addEventListener("click", function () {
 
 document.getElementById("talkBtn").addEventListener("click", function () {
     const randomNum = Math.floor(Math.random() * 100) + 1;
-    var int = parseInt(getCookieValue('int'));
 
     if (randomNum <= 1.25 * int) {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/elftalkW.html';
@@ -30,3 +31,14 @@ document.getElementById("talkBtn").addEventListener("click", function () {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/elftalkL.html';
     }
 });
+
+function chance() {
+    var footer1 = document.querySelector(".1");
+    footer1.innerHTML = `Fight scales off luck: ${1.25 * luck}% of success`
+    var footer2 = document.querySelector(".2");
+    footer2.innerHTML = `Talk scales off intelligence: ${1.25 * int}% of success`
+}
+
+chance();
+
+
