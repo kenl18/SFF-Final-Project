@@ -12,6 +12,9 @@ function getCookieValue(name) {
 document.getElementById("statBtn").addEventListener("click", function () {
     const randomNum = Math.floor(Math.random() * 100) + 1;
     var int = parseInt(getCookieValue('int'));
+    var str = parseInt(getCookieValue('str'));
+    var luck = parseInt(getCookieValue('luck'));
+
 
     if (randomNum <= 2.5 * int) {
         window.location.href = 'https://kenl18.github.io/SFF-Final-Project/html/stealW.html';
